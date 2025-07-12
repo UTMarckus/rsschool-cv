@@ -64,9 +64,6 @@ a {
     justify-content: space-around;
 }
 
-.nav__list-item {
-}
-
 .nav__link {
     display: block;
 
@@ -81,4 +78,34 @@ a {
 
 .nav__link:hover {
     background-color: #6e97f0;
+}
+
+.footer {
+    padding: 20px 0;
+    background: #04045a;
+    color: #e9e3e3;    
+}
+
+.footer__container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__github {
+    max-width: 200px;
+}
+
+.footer__rss {
+    max-width: 200px;
+}
+
+
+.footer__link {
+    display: block;
+
+    height: 100%;
+    
+    color: #04045a;
+    text-align: center;
+    background-color: #ffffff;
 }
