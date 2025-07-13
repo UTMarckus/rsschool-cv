@@ -7,6 +7,161 @@
     <title>John Smith</title>
 </head>
 <body>
-    <h1>John Smith</h1>
+    <header class="header">
+        <div class="container flex-container">
+            <div class="header__ava">
+                <img src="./img/ava-r.jpg" alt="John Smith">
+            </div>
+
+            <div class="header__info">
+                <h1 class="header__title">John Smith</h1>
+                <h3 class="header__subtitle">Junior Frontend Developer</h3>
+                <ul class="header__contacts">
+                    <li class="header__text">
+                        Tel: <a href="tel:+15555505555">+1 (555) 550-55-55</a>
+                    </li>
+                    <li class="header__text">
+                        Email: <a href="email:random@random.com">random@random.com</a>
+                    </li>
+                    <li class="header__text">
+                        Telegram: <a href="google.com" target="_blank">@j_smith</a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="header__nav nav">
+                <ul class="nav__list flex-container">
+                    <li class="nav__list-item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__list-item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__list-item"><a href="#examples" class="nav__link">Code examples</a></li>
+                    <li class="nav__list-item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__list-item"><a href="#edu" class="nav__link">Education</a></li>
+                    <li class="nav__list-item"><a href="#lang" class="nav__link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="main__title">About me</h2>
+                <p class="main__text">
+                    I am a motivated and detail-oriented Junior JavaScript Developer with a strong foundation in front-end development and a growing interest in back-end technologies. I enjoy turning complex problems into simple, clean, and efficient code. My experience includes working with HTML, CSS, JavaScript (ES6+), and frameworks like React. I am passionate about continuous learning and eager to contribute to a collaborative development team where I can grow as a developer and bring value to real-world projects.
+                </p>
+            </div>
+        </section>
+
+        <section class="skills section section_grey" id="skills">
+            <div class="container">
+                <h2 class="main__title">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__list-item">HTML</li>
+                    <li class="skills__list-item">CSS</li>
+                    <li class="skills__list-item">JavaScript</li>
+                    <li class="skills__list-item">NodeJS</li>
+                    <li class="skills__list-item">Git</li>
+                    <li class="skills__list-item">REST API</li>
+                    <li class="skills__list-item">Agile</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="examples section" id="examples">
+            <div class="container">
+                <h2 class="main__title">Code examples</h2>
+                <article class="examples__article">
+                    <h4 class="examples__subtitle">JavaScript</h4>
+                    <pre>
+<code>function factorial(x) {
+    if (x == 0) {
+        return 1;
+    } else {
+        return x * factorial(x - 1);
+    }
+}</code>
+                    </pre>
+                </article>
+                
+                <article class="examples__article">
+                    <h4 class="examples__subtitle">Kotlin</h4>
+                    <pre>
+<code>fun multiplyNumbers(num: Int): Long {
+    if (num >= 1)
+        return num * multiplyNumbers(num - 1)
+    else
+        return 1
+}</code>
+                    </pre>
+                </article>
+            </div>
+        </section>
+
+        <section class="my-projects section section_grey" id="projects">
+            <div class="container">
+                <h2 class="main__title">My projects</h2>
+                <div class="projects__flex-container flex-container">
+                    <article class="projects__article">
+                        <a href="https://utmarckus.github.io/rsschool-cv/" class="projects__link" target="_blank">
+                            <div class="projects__img">
+                                <img src="./img/cv.png" alt="CV (HTML) screenshot">
+                            </div>
+                            <p class="projects__text">My CV (HTML)</p>
+                        </a>
+                    </article>
+                    
+                    <article class="projects__article">
+                        <a href="https://utmarckus.github.io/rsschool-cv/cv.md" class="projects__link" target="_blank">
+                            <div class="projects__img">
+                                <img src="./img/cv-md.png" alt="CV (MD) screenshot">
+                            </div>
+                            <p class="projects__text">My CV (MD)</p>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="edu section" id="edu">
+            <div class="container">
+                <h2 class="main__title">Education</h2>
+                <h3 class="edu__uni">Massachusetts Institute of Technology</h3>
+                <p class="edu__years">2002-2006</p>
+                <p class="edu__major">Computer science</p>                
+            </div>
+        </section>
+
+        <section class="lang section section_grey" id="lang">
+            <div class="container">
+                <h2 class="main__title">Languages</h2>
+                <ul class="lang__list">
+                    <li class="lang__list-item">English — B1</li>
+                    <li class="lang__list-item">Russian — native</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container flex-container">
+            <div class="footer__github">
+                <a href="https://github.com/UTMarckus" class="footer__link" target="_blank">
+                    <img src="./img/GitHub.png" alt="GitHub logo">
+                    <p class="footer__text">My GitHub</p>
+                </a>
+            </div>
+
+            <div class="footer__copyright">
+                <p class="footer__text">Marckus © 2025</p>
+            </div>
+            
+            <div class="footer__rss">
+                <a href="https://rs.school/courses/javascript-ru" class="footer__link" target="_blank">
+                    <img src="./img/rs-school-logo.svg" alt="RS School logo">
+                    <p class="footer__text">RS School</p>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
