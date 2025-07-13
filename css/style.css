@@ -117,6 +117,32 @@ code {
     margin: 0;
 }
 
+.projects__flex-container {
+}
+
+.projects__article {
+    margin: 0 30px 15px;
+}
+
+.projects__link {
+    display: inline-block;
+
+    color: #6e97f0;
+
+    transition: 0.5s;
+}
+
+.projects__link:hover {
+    color: #0451f8;
+
+    transition: 0.5s;
+}
+
+.projects__img {
+    width: 200px;
+    height: 170px;
+}
+
 /* FOOTER =======================================================================================*/
 .footer {
     padding: 20px 0;
