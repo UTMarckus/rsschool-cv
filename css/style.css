@@ -23,6 +23,10 @@ a {
     text-decoration: none;
 }
 
+code {
+    padding: 0;
+}
+
 .container {
     max-width: 1024px;
     margin: 0 auto;
@@ -106,6 +110,11 @@ a {
 
 .skills__list-item {
     list-style: square;
+}
+
+.examples__subtitle {
+    font-size: 20px;
+    margin: 0;
 }
 
 /* FOOTER =======================================================================================*/

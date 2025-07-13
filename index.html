@@ -33,7 +33,7 @@
                 <ul class="nav__list flex-container">
                     <li class="nav__list-item"><a href="#about" class="nav__link">About me</a></li>
                     <li class="nav__list-item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__list-item"><a href="#exmaples" class="nav__link">Examples of code</a></li>
+                    <li class="nav__list-item"><a href="#examples" class="nav__link">Code examples</a></li>
                     <li class="nav__list-item"><a href="#projects" class="nav__link">Projects</a></li>
                     <li class="nav__list-item"><a href="#edu" class="nav__link">Education</a></li>
                 </ul>
@@ -63,6 +63,36 @@
                     <li class="skills__list-item">REST API</li>
                     <li class="skills__list-item">Agile</li>
                 </ul>
+            </div>
+        </section>
+
+        <section class="examples section" id="examples">
+            <div class="container">
+                <h2 class="main__title">Code examples</h2>
+                <article class="examples__article">
+                    <h4 class="examples__subtitle">JavaScript</h4>
+                    <pre>
+<code>function factorial(x) {
+    if (x == 0) {
+        return 1;
+    } else {
+        return x * factorial(x - 1);
+    }
+}</code>
+                    </pre>
+                </article>
+                
+                <article class="examples__article">
+                    <h4 class="examples__subtitle">Kotlin</h4>
+                    <pre>
+<code>fun multiplyNumbers(num: Int): Long {
+    if (num >= 1)
+        return num * multiplyNumbers(num - 1)
+    else
+        return 1
+}</code>
+                    </pre>
+                </article>
             </div>
         </section>
     </main>
