@@ -1,6 +1,6 @@
 # CV
 
-# John Dou
+# John Doe
 
 ### email: johndou@email.com, phone: +1 555 987 65 43
 
