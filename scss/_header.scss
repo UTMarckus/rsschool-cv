@@ -19,12 +19,15 @@
 
   &-contacts-item {
 
-    & a:hover {
-      color: red;
+    & a {
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: red;
+      }
     }
   }
 }
-
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -35,6 +38,7 @@
 }
 
 .nav-item {
+  transition: all 0.3s ease;
 
   &:hover {
     color: red;

@@ -102,6 +102,9 @@ h6 {
   margin: 0 0 20px 0;
   font-size: 16px;
 }
+.header-contacts-item a {
+  transition: all 0.3s ease;
+}
 .header-contacts-item a:hover {
   color: red;
 }
@@ -115,6 +118,9 @@ h6 {
   font-size: 16px;
 }
 
+.nav-item {
+  transition: all 0.3s ease;
+}
 .nav-item:hover {
   color: red;
 }
@@ -141,6 +147,14 @@ a {
   background-color: rgb(189, 189, 189);
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
 .section {
   padding: 20px;
 }
@@ -162,4 +176,24 @@ a {
 
 .skills-item {
   list-style: disc;
+}
+
+.my-git {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.my-git img {
+  margin: 0 10px 0 0;
+}
+.my-git:hover {
+  scale: 1.1;
+}
+
+.rss {
+  transition: all 0.3s ease;
+}
+.rss:hover {
+  scale: 1.1;
 }

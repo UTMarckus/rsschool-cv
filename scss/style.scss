@@ -23,6 +23,14 @@ a {
   background-color: rgb(189, 189, 189);
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
 .section {
   padding: 20px;
 
@@ -47,4 +55,27 @@ a {
 
 .skills-item {
   list-style: disc;
+}
+
+.my-git {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.3s ease;
+
+  & img {
+    margin: 0 10px 0 0;
+  }
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.rss {
+  transition: all 0.3s ease;
+
+  &:hover {
+    scale: 1.1;
+  }
 }
