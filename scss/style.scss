@@ -1,5 +1,16 @@
-* {
-  margin: none;
-  padding: none;
-  box-sizing: border-box;
+@use "null-style";
+@use "header";
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
