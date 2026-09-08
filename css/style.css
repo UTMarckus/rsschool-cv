@@ -119,8 +119,13 @@ h6 {
   color: red;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 a {
@@ -130,4 +135,31 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.bg-gray {
+  background-color: rgb(189, 189, 189);
+}
+
+.section {
+  padding: 20px;
+}
+.section-title {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+}
+.section-subtitle {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+.section-text {
+  margin: 0 0 10px 0;
+}
+
+.skills-list {
+  padding: 0 0 0 30px;
+}
+
+.skills-item {
+  list-style: disc;
 }

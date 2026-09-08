@@ -23,21 +23,121 @@
       <nav class="header-navigation">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#" class="nav-link">Item 1</a>
+            <a href="#self-introduction" class="nav-link">Self Introduction</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Item 2</a>
+            <a href="#skills" class="nav-link">Skills</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Item 3</a>
+            <a href="#code-example" class="nav-link">Code Example</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Item 4</a>
+            <a href="#experience" class="nav-link">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#languages" class="nav-link">Languages</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <main class="main">
+
+    <section class="section self-introduction" id="self-introduction">
+      <div class="container">
+        <h2 class="section-title">Self Introduction</h2>
+        <p class="section-text">
+          Motivated, adaptable professional focused on growth and impact—leveraging strong problem-solving skills,
+          collaborative teamwork, and eagerness to continuously learn new abilities.
+        </p>
+        <p class="section-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi at expedita eius adipisci? Vitae explicabo
+          excepturi beatae, quia maiores dolores facilis cumque, incidunt aperiam qui officiis quidem fugiat repellat
+          et?
+        </p>
+        <p class="section-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi at expedita eius adipisci? Vitae explicabo
+          excepturi beatae, quia maiores dolores facilis cumque, incidunt aperiam qui officiis quidem fugiat repellat
+          et?
+        </p>
+      </div>
+    </section>
+
+    <section class="section skills bg-gray" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills-list">
+          <li class="skills-item">HTML</li>
+          <li class="skills-item">CSS/SCSS</li>
+          <li class="skills-item">JavaScript</li>
+          <li class="skills-item">TypeScript</li>
+          <li class="skills-item">Git</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section code-example" id="code-example">
+      <div class="container">
+        <h2 class="section-title">Code Example</h2>
+
+        <pre>
+          <code>
+            function shuffleArray(arr) {
+              const result = [...arr];
+            
+              for (let i = result.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [result[i], result[j]] = [result[j], result[i]];
+              }
+            
+              return result;
+            }
+
+            // Example usage:
+            const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+            console.log(shuffleArray(numbers));
+            
+            function getRandomItems(arr, count) {
+              return shuffleArray(arr).slice(0, count);
+            }
+
+            console.log(getRandomItems(numbers, 3));
+          </code>
+        </pre>
+
+      </div>
+    </section>
+
+    <section class="section experience bg-gray" id="experience">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <h3 class="section-subtitle">Super Ultra Cool Nothing Project</h3>
+        <p class="section-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatibus ullam odio, vel qui beatae! Nisi
+          nobis maxime quos temporibus, perferendis aliquam laborum porro ratione, amet in minus nihil nulla.
+        </p>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <h3 class="section-subtitle">2010-2015, MIT, PhD IT</h3>
+      </div>
+    </section>
+
+    <section class="section languages bg-gray" id="languages">
+      <div class="container">
+        <h2 class="section-title">Languages</h2>
+        <p class="section-text">English A2-B1</p>
+      </div>
+    </section>
+
+  </main>
 
 </body>
 
