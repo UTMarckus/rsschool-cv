@@ -162,10 +162,6 @@ a {
   margin: 0 0 20px 0;
   font-size: 20px;
 }
-.section-subtitle {
-  margin: 0 0 10px 0;
-  font-size: 18px;
-}
 .section-text {
   margin: 0 0 10px 0;
 }
@@ -176,6 +172,13 @@ a {
 
 .skills-item {
   list-style: disc;
+}
+
+.education-years {
+  margin: 0 0 10px 0;
+}
+.education-uni {
+  margin: 0 0 10px 0;
 }
 
 .my-git {
