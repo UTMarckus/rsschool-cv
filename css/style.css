@@ -89,8 +89,14 @@ h6 {
   background: rgb(182, 179, 179);
   padding: 30px;
 }
-.header-title {
+.header-intro {
+  justify-content: center !important;
   margin: 0 0 20px 0;
+}
+.header-ava {
+  margin: 0 20px 0 0;
+}
+.header-title {
   font-size: 24px;
   text-align: center;
 }
