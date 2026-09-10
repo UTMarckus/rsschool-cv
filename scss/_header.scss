@@ -1,0 +1,56 @@
+.header {
+  background: rgb(182, 179, 179);
+  padding: 30px;
+
+  &-intro {
+    justify-content: center !important;
+    margin: 0 0 20px 0;
+  }
+
+  &-ava {
+    margin: 0 20px 0 0;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  &-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+  }
+
+  &-contacts-item {
+
+    & a {
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.nav-item {
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: red;
+  }
+}
