@@ -1,0 +1,107 @@
+@use "null-style";
+@use "header";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-gray {
+  background-color: rgb(189, 189, 189);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.section {
+  padding: 20px;
+
+  &-title {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+  }
+
+  &-text {
+    margin: 0 0 10px 0;
+  }
+}
+
+.experience {
+
+  &-link {
+    display: inline-block;
+    border: 4px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: red;
+    }
+  }
+
+  &-img {
+    max-height: 200px;
+  }
+}
+
+.skills-list {
+  padding: 0 0 0 30px;
+}
+
+.skills-item {
+  list-style: disc;
+}
+
+.education {
+
+  &-years {
+    margin: 0 0 10px 0;
+  }
+
+  &-uni {
+    margin: 0 0 10px 0;
+  }
+
+}
+
+.my-git {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.3s ease;
+
+  & img {
+    margin: 0 10px 0 0;
+  }
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.rss {
+  transition: all 0.3s ease;
+
+  &:hover {
+    scale: 1.1;
+  }
+}

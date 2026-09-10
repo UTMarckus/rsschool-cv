@@ -5,11 +5,147 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV John Doe</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <h1>CV John Doe</h1>
+  <header class="header">
+    <div class="container">
+      <div class="header-intro flex-row">
+        <img src="./img/chicken-joe-ava.jpeg" alt="My avatar" class="header-ava" height="150">
+        <h1 class="header-title">CV John Doe</h1>
+      </div>
+      <ul class="header-contacts">
+        <li class="header-contacts-item">
+          email: <a href="mailto:johndou@email.com" class="contacts-link">johndou@email.com</a>
+        </li>
+        <li class="header-contacts-item">
+          phone: <a href="tel:+15559876543" class="contacts-link">+1 555 987 65 43</a>
+        </li>
+      </ul>
+      <nav class="header-navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#self-introduction" class="nav-link">Self Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#code-example" class="nav-link">Code Example</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#languages" class="nav-link">Languages</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="section self-introduction" id="self-introduction">
+      <div class="container">
+        <h2 class="section-title">Self Introduction</h2>
+        <p class="section-text">
+          Motivated, adaptable professional focused on growth and impact—leveraging strong problem-solving skills,
+          collaborative teamwork, and eagerness to continuously learn new abilities.
+        </p>
+      </div>
+    </section>
+
+    <section class="section skills bg-gray" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills-list">
+          <li class="skills-item">HTML</li>
+          <li class="skills-item">CSS/SCSS</li>
+          <li class="skills-item">JavaScript</li>
+          <li class="skills-item">TypeScript</li>
+          <li class="skills-item">Git</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section code-example" id="code-example">
+      <div class="container">
+        <h2 class="section-title">Code Example</h2>
+
+        <pre>
+          <code>
+            function shuffleArray(arr) {
+              const result = [...arr];
+            
+              for (let i = result.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [result[i], result[j]] = [result[j], result[i]];
+              }
+            
+              return result;
+            }
+
+            // Example usage:
+            const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+            console.log(shuffleArray(numbers));
+            
+            function getRandomItems(arr, count) {
+              return shuffleArray(arr).slice(0, count);
+            }
+
+            console.log(getRandomItems(numbers, 3));
+          </code>
+        </pre>
+
+      </div>
+    </section>
+
+    <section class="section experience bg-gray" id="experience">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-text">Educational projects</p>
+        <a href="https://utmarckus.github.io/rsschool-cv/" class="experience-link" target="_blank">
+          <img src="./img/edu-project.png" alt="My educational project" class="experience-img">
+        </a>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p class="education-years">2010 - 2015</p>
+        <p class="education-uni">Massachusetts Institute of Technology</p>
+        <p class="education-major">PhD in Computational Science and Engineering (CSE)</p>
+      </div>
+    </section>
+
+    <section class="section languages bg-gray" id="languages">
+      <div class="container">
+        <h2 class="section-title">Languages</h2>
+        <p class="section-text">English A2-B1</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container flex-row">
+      <a href="https://github.com/UTMarckus" class="my-git" target="_blank">
+        <img src="./img/GitHub_Invertocat_Black.svg" alt="GitHub Logo">
+        <span>UTMarckus</span>
+      </a>
+      <p class="copyright">©2026</p>
+      <a href="https://rs.school/courses/javascript" class="rss" target="_blank">
+        <img src="./img/rs-school-logo.svg" alt="RSS" height="96">
+      </a>
+    </div>
+  </footer>
+
 </body>
 
 </html>
